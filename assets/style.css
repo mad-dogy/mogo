@@ -1,7 +1,7 @@
 body{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
   color: #333;
 }
@@ -24,12 +24,98 @@ li{
   margin: 0 auto;
 }
 .intro{
-  background-image: linear-gradient(180deg, rgba(19, 39, 93, 0.94), rgba(101, 173, 241, 0.94)), url("/assets/img/intro.jpg");
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+
+  background-image: linear-gradient(180deg, rgba(19, 39, 93, 0.93), rgba(101, 173, 241, 0.93)), url("/mogo/assets/img/intro.jpg");
   background-size: cover;
   width: 100%;
   height: 100vh;
   color: #fff;
 }
+.intro-inner{
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+.intro-title{
+  font-size: 130px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+.intro-title:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 35px auto;
+  background-color: #fff;
+}
+.intro-suptitle{
+  font-size: 55px;
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  text-transform: capitalize;
+
+}
+.intro-slider{
+  width: 100%;
+  max-width: 1200px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  color: #fff;
+  top: 690px;
+  left: 0;
+  right: 0;
+}
+.slider-item{
+  width: 20%;
+  text-transform: uppercase;
+  font-size: 16px;
+  opacity: 0.7;
+}
+.slider-item.active{
+  opacity: 1;
+}
+.slider-item:before{
+  content: "";
+  display: block;
+  border-bottom: 3px solid #fff;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+.item-number{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a.button{
+  display: inline-block;
+  margin: 0 auto;
+  width: 160px;
+  padding: 7px 20px;
+  border: 3px solid #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s linear;
+  transition: color 0.3s linear;
+}
+a.button:hover{
+  background-color: #fff;
+  color: #2a2c5d;
+}
+
 .header{
   width: 100%;
   position: absolute;
@@ -42,9 +128,27 @@ li{
   font-size: 14px;
   color: #fff;
   text-decoration: none;
+  transition: color 0.2s linear;
+  transition: 0.2s;
+}
+header a:hover{
+  color: #fce38a;
+  border-bottom: 3px solid #fce38a;
+}
+header li{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
+}
+.header-inner{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo{
+header div.logo{
   font-size: 30px;
   font-weight: 700;
+  color:#fff;
 }
