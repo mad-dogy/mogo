@@ -76,6 +76,90 @@ li{
   left: 0;
   right: 0;
 }
+
+.section{
+  color: #333;
+  padding: 80px 0;
+
+}
+.section-header{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.section-suptitle{
+  font-size: 20px;
+  font-family: 'Kaushan Script', cursive;
+
+}
+.section-title{
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.section-title:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 30px auto 30px;
+  background-color: #5154a9 ;
+}
+.section-text{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #999;
+}
+
+
+.about{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-item{
+  width: 380px;
+  position: relative;
+  background-color: rgba(101, 173, 241, 0.8);
+}
+.about-item:hover .about-img{
+  transform: translate3d(-10px,-10px,0);
+}
+.about-item:hover .about-img img{
+  opacity: 0.2;
+}
+.about-img{
+  background: linear-gradient(to bottom, rgba(19, 39, 93, 0.93), 
+  rgba(101, 173, 241, 0.93));
+  transition: transform 0.2s linear;
+}
+.about-img img{
+  display: block;
+  transition: opacity .2s linear;
+}
+.about-text{
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+.about-item:hover .about-text{
+  opacity: 1;
+}
+
+
 .slider-item{
   width: 20%;
   text-transform: uppercase;
@@ -151,4 +235,34 @@ header div.logo{
   font-size: 30px;
   font-weight: 700;
   color:#fff;
+}
+
+.statistic{
+  width: 100%;
+  color: #fff;
+  background-color: rgba(101, 173, 241, 0.8);
+
+}
+.elements{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.statistic-element{
+  padding:35px 30px 45px;
+  width: 100%;
+  max-width: 240px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  border-left: 1px solid #b5eae0;
+}
+.statistic-element:last-child{
+  border-right: 1px solid #b5eae0;
+}
+.statistic-element .number{
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.56;
 }
