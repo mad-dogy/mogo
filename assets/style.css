@@ -84,7 +84,6 @@ li{
 .section{
   color: #333;
   padding: 38px 0;
-
 }
 .section-header{
   width: 100%;
@@ -170,7 +169,7 @@ li{
 .service:last-child{
   padding-top: 50px;
   padding-bottom: 50px;
-  border-top: 1px solid #999;
+  border-top: 1px solid #5154a9;
 }
 .service-item{
   flex:  1 1 0;
@@ -325,19 +324,21 @@ header div.logo{
 
 .what-we-do{
   margin-top: 20px;
-  height: 900px;
+  height: 750px;
 }
 .weDo-block{
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  max-width: 1220px;
+  width: 100%;
+  max-width: 1050px;
 }
 .weDo-item{
   width: 50%;
 }
 .weDo-item img{
   width: 100%;
-  max-width: 570px;
+  max-width: 500px;
 }
 
 .accordion-item{
@@ -395,3 +396,161 @@ header div.logo{
   padding: 15px;
   color: #c3c3c3;
 }
+
+/* Quote */
+.quote{
+  min-height: 250px;
+  background-color: #f8f8f8;
+}
+.quote-content{
+  margin: 15px auto;
+  max-width: 800px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quote-content::before{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+
+  transform: translateY(-50%) rotate(-135deg);
+}
+.quote-content::after{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+
+  position: absolute;
+  top: 50%;
+  right: 170px;
+  z-index: 1;
+
+  transform: translateY(-50%) rotate(45deg);
+}
+.quote-img{
+  display: inline-block;
+  padding: 40px 40px 38px;
+  margin: 60px;
+  border: 3px solid #95e1d3;
+}
+.quote-message{
+  font-size: 18px;
+  color: #ccc;
+}
+.quote-author{
+  font-size: 20px;
+  font-family: 'Kaushan Script', cursive;
+}
+.quote-author::before{
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: #5154a9 ;
+}
+
+
+.team-content{
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.team-item{
+  text-align: center;
+  position: relative;
+
+  background-color: rgba(101, 173, 241, 0.8);
+}
+
+.team-img img{
+  width: 300px;
+  display: block;
+  transition: opacity .2s linear;
+}
+.team-item:hover .team-img{
+  transform: translate3d(-10px,-10px,0);
+  cursor: pointer;
+}
+.team-item:hover .team-img img{
+  opacity: 0.2;
+}
+.team-img{
+  background: linear-gradient(to bottom, rgba(19, 39, 93, 0.93), 
+  rgba(101, 173, 241, 0.93));
+  transition: transform 0.2s linear;
+}
+.team-man-name{
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+  background: #fff;
+}
+.team-man-speciality{
+  color: #ccc;
+  background: #fff;
+}
+
+.section.work{
+  padding-bottom: 0;
+}
+.work-content{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.work-content-item{
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  max-height: 780px;
+  margin: 0;
+  padding: 0;
+}
+.work-content-item img{
+  display: block;
+}
+
+
+
+
+.logos{
+  margin: 0 auto;
+  background-color:#f8f8f8;
+}
+.logos-content{
+  margin: 0 auto;
+  max-width: 900px;
+}
+.logos-content img{
+  max-width:900px;
+}
+
+.quote-img-woman{
+  display: inline-block;
+  padding: 15px;
+  margin: 30px;
+}
+.quote-img-woman img{
+  width: 170px;
+}
+
+
