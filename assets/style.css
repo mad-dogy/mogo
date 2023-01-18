@@ -129,6 +129,7 @@ li{
 }
 .about-item:hover .about-img{
   transform: translate3d(-10px,-10px,0);
+  cursor: pointer;
 }
 .about-item:hover .about-img img{
   opacity: 0.2;
@@ -338,29 +339,59 @@ header div.logo{
   width: 100%;
   max-width: 570px;
 }
-.accordion{
-}
+
 .accordion-item{
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   border: 1px solid #E5E5E5;
 }
+.accordion-item.active
+.accordion-content{
+  display: block;
+}
 .accordion-header{
-  padding: 15px;
-  padding-bottom: 5px;
-  display: flex;
+  padding: 15px 20px 15px 65px;
+  position: relative;
+
   border-bottom: 1px solid #E5E5E5;
+  cursor: pointer;
+}
+.accordion-header:after{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  z-index: 1;
+
+  transform: translateY(-50%) rotate(135deg);
+}
+.accordion-item.active
+.accordion-header:after{
+  top: 55%;
+  transform: translateY(-50%) rotate(-45deg);
 }
 .accordion-icon img{
   width: 32px;
+  position: absolute;
+  top: 50%;
+  left: 20px;    
+  z-index: 1;
+
+  transform: translateY(-50%);
 }
 .accordion-title{
-  padding: 5px 10px 0;
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 14px;
   color: #333;
+  text-transform: uppercase;
 }
 .accordion-content{
+  display: none;
   padding: 15px;
   color: #c3c3c3;
 }
