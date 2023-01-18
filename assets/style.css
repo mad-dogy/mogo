@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -22,13 +25,14 @@ li{
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 .intro{
   display: flex;
   flex-direction: column ;
   justify-content: center;
 
-  background-image: linear-gradient(180deg, rgba(19, 39, 93, 0.93), rgba(101, 173, 241, 0.93)), url("/mogo/assets/img/intro.jpg");
+  background-image: linear-gradient(180deg, rgba(19, 39, 93, 0.93), rgba(101, 173, 241, 0.93)), url("/assets/img/intro.jpg");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -191,7 +195,7 @@ li{
 .devices{
   height: 100vh;
   background-image: 
-  url("/mogo/assets/img/devices/background-image.jpg");
+  url("/assets/img/devices/background-image.jpg");
   background-color: #f8f8f8;
   background-size: cover;
   padding-bottom: 0;
@@ -199,15 +203,16 @@ li{
 }
 section .laptop{
   position: absolute;
-  width: 380px;
-  left: 460px;
+  width: 100%;
+  max-width: 380px;
+  left: 30%;
 }
 section .smartphone{
   position: absolute;
-  
-  width: 200px;
-  top: 2500px;
-  left:720px;
+  width: 100%;
+  max-width: 200px;
+  top: 250%;
+  left: 50%;
 }
 
 .slider-item{
@@ -315,4 +320,47 @@ header div.logo{
   font-size: 70px;
   font-weight: bold;
   line-height: 1.56;
+}
+
+.what-we-do{
+  margin-top: 20px;
+  height: 900px;
+}
+.weDo-block{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1220px;
+}
+.weDo-item{
+  width: 50%;
+}
+.weDo-item img{
+  width: 100%;
+  max-width: 570px;
+}
+.accordion{
+}
+.accordion-item{
+  margin-bottom: 7px;
+  border: 1px solid #E5E5E5;
+}
+.accordion-header{
+  padding: 15px;
+  padding-bottom: 5px;
+  display: flex;
+  border-bottom: 1px solid #E5E5E5;
+}
+.accordion-icon img{
+  width: 32px;
+}
+.accordion-title{
+  padding: 5px 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+}
+.accordion-content{
+  padding: 15px;
+  color: #c3c3c3;
 }
