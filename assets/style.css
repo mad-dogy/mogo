@@ -508,6 +508,7 @@ header div.logo{
   background: #fff;
 }
 
+
 .section.work{
   padding-bottom: 0;
 }
@@ -518,18 +519,36 @@ header div.logo{
   padding: 0;
 }
 .work-content-item{
-  width: 100%;
-  max-width: 480px;
   height: 100%;
   max-height: 780px;
   margin: 0;
   padding: 0;
 }
-.work-content-item img{
-  display: block;
+.work-item{
+  background: linear-gradient(to bottom, rgba(19, 39, 93, 0.93), 
+  rgba(101, 173, 241, 0.93));
+  transition: transform 0.2s linear;
 }
-
-
+.work-item img{
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  transition: opacity .2s linear;
+}
+.work-item:hover img{
+  opacity: 0.2;
+}
+.work-item-icon img{
+  width: 100%;
+  max-width: 16px;
+}
+.work-item-title{
+  text-transform: uppercase;
+}
+.work-item-suptitle{
+  font-size: 14px;
+  color: #ccc;
+}
 
 
 .logos{
