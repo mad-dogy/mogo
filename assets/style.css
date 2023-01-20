@@ -138,8 +138,11 @@ li{
   rgba(101, 173, 241, 0.93));
   transition: transform 0.2s linear;
 }
-.about-img img{
-  display: block;
+.about-text svg{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 30px;
+  fill: #fff;
   transition: opacity .2s linear;
 }
 .about-text{
@@ -161,6 +164,9 @@ li{
 }
 .about-item:hover .about-text{
   opacity: 1;
+}
+.about-item:hover{
+  cursor: pointer;
 }
 
 .service{
@@ -525,6 +531,7 @@ header div.logo{
   padding: 0;
 }
 .work-item{
+  position: relative;
   background: linear-gradient(to bottom, rgba(19, 39, 93, 0.93), 
   rgba(101, 173, 241, 0.93));
   transition: transform 0.2s linear;
@@ -538,16 +545,37 @@ header div.logo{
 .work-item:hover img{
   opacity: 0.2;
 }
-.work-item-icon img{
+.work-text svg{
+  margin: 0 auto;
   width: 100%;
-  max-width: 16px;
+  max-width: 25px;
+  fill: #fff;
 }
-.work-item-title{
+.work-text .title{
   text-transform: uppercase;
+  color: #fff;
 }
-.work-item-suptitle{
+.work-text{
+  width: 100%;
   font-size: 14px;
-  color: #ccc;
+  font-weight: bold;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+
+  transform: translate3d(0, -50%, 0);
+
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+.work-item:hover .work-text{
+  opacity: 1;
+}
+.work-item:hover{
+  cursor: pointer;
 }
 
 
