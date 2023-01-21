@@ -601,3 +601,26 @@ header div.logo{
 }
 
 
+.clients{
+  height: 100vh;
+  background-image: 
+  url("/assets/img/devices/background-image.jpg");
+  background-color: #f8f8f8;
+  background-size: cover;
+  padding-bottom: 0;
+}
+.clients-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.clients-item{
+  width: 100%;
+  max-width: 500px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
